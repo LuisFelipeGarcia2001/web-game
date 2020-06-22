@@ -1,0 +1,53 @@
+html {
+  cursor: url(../assets/fly_killer.png) 30 30, auto;
+}
+
+body {
+  background: url(../assets/bg.jpg),
+    #21a521f5;
+  background-repeat: no-repeat;
+}
+
+.fly1 {
+  width: 50px;
+  height: 50px;
+}
+
+.fly2 {
+  width: 70px;
+  height: 70px;
+}
+
+.fly3 {
+  width: 90px;
+  height: 90px;
+}
+
+.left {
+  transform: scaleX(1);
+}
+
+.right {
+  transform: scaleX(-1);
+}
+
+.panel {
+  position: absolute;
+  width: 190px;
+  padding: 10px;
+  left: 0px;
+  bottom: 0px;
+  border-top: solid 1px #fff;
+  background-color: #fff;
+  opacity: 0.75;
+}
+
+.life-points {
+  float: left;
+}
+
+.time-left {
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+}

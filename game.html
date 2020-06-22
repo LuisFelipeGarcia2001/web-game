@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mata Mosquito</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/game.js"></script>
+</head>
+
+<body onresize="windowGameSize()">
+  <div class="panel">
+    <div class="lifes-points">
+      <img id="life3" src="assets/full_heart.png" alt="Coração vazio">
+      <img id="life2" src="assets/full_heart.png" alt="Coração vazio">
+      <img id="life1" src="assets/full_heart.png" alt="Coração vazio">
+    </div>
+    <div class="time-left">
+      Tempo Restante:
+      <span id="time-left">
+
+      </span>
+    </div>
+  </div>
+  <script>
+    document.getElementById('time-left').innerHTML = time
+
+    var createFly = setInterval(function() {
+      randomicPosition()
+      
+    }, setFlyTime)
+  </script>
+</body>
+
+</html>
